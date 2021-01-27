@@ -84,6 +84,7 @@
     }); // #SONA
     return vars; // #SONA
   } // #SONA
+var SONA_ID = getUrlParam('id','Empty'); // #SONA
 
 // function to go find data in the URL
 // should be provided a defualt (e.g., "") so that there will be no errors thrown
@@ -168,8 +169,7 @@ This research has been approved by the Psychology/Sociology Review Board. If you
                     <!-- set up a button group so that any of the buttons will end the trial -->
                     <div class="btn-group"; id = "consent-btns">
                       <!-- set up the "agree" button. It sets the consent_check to true so the debriefing trial will be skipped -->
-                      <button type="button"; id = "agree-btn"; class="btn btn-primary btn-lg"; style="font-size: 20pt"; onClick = "location.href=' https://run.pavlovia.org/martsyn/implicit-and-explicit-learning-in-psychological-distress/html?id=getUrlParam('id','Empty')
-">I agree</button>
+                      <button type="button"; id = "agree-btn"; class="btn btn-primary btn-lg"; style="font-size: 20pt"; onClick = "location.href=' https://run.pavlovia.org/martsyn/implicit-and-explicit-learning-in-psychological-distress/html?id=SONA_ID;">I agree</button>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
